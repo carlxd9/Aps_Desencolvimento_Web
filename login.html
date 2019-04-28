@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jogo da memória</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script
+  src="https://code.jquery.com/jquery-3.4.0.js"
+  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+  crossorigin="anonymous"></script>
+  </head>
+  <body id="body">
+    <div
+      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
+    >
+      <h5 class="my-0 mr-md-auto font-weight-normal" ><a href="#">Jogo da memória</a></h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="#">Login</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="cadastro.html" id="fazerCadastro">Fazer cadastro</a>
+    </div>
+
+     <header id="showcase">
+      <div class="jumbotron jumbotron-fluid" id="cardLogin">
+        <div class="container">
+          <h1 class="display-4">
+            Login
+          </h1>
+          <hr />
+          <form class="form-sign  in">
+            <div class="text-center mb-4"></div>
+
+            <div class="form-label-group" style="margin-bottom:9px">
+              <input
+                type="email"
+                id="inputEmail"
+                class="form-control"
+                placeholder="Endereço de e-mail"
+                oninvalid="this.setCustomValidity('Digite um endereço de E-mail')"
+                oninput="setCustomValidity('')"
+                required
+                autofocus
+              />
+            </div>
+
+            <div class="form-label-group" style="margin-bottom:9px">
+              <input
+                type="password"
+                id="inputPassword"
+                class="form-control"
+                placeholder="Senha"
+                oninvalid="this.setCustomValidity('Digite uma senha')"
+                oninput="setCustomValidity('')"
+                required
+              />
+            </div>
+
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me" /> lembre me
+              </label>
+            </div>
+            <button
+              class="btn btn-lg btn-primary btn-block"
+              id="btnEntrar"
+              type="submit"
+              onclick="chamarGame()"
+            >
+              Entrar
+            </button>
+          </form>
+        </div>
+        <a href="cadastro.html" id="textCad">Ainda não sou cadastrado</a>
+      </div>
+    </header>
+   
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

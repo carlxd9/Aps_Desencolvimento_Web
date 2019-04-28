@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#body {
+  background-color: darkgray;
+}
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 33%;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-right: 168px;
+}
+#btnEntrar {
+  color: #fff;
+  background-color: green;
+  border-color: green;
+}
+#textCad {
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 600px;
+  position: absolute;
+  left: 29%;
+  top: -740px;
+  opacity: 0;
+}
+.card-title {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#card {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+#container-buttons {
+  margin-top: 10px;
+  margin-left: 335px;
+  padding: 5px;
+}
+.btn {
+  padding: 10px;
+}

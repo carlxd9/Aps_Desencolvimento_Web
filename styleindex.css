@@ -1,0 +1,123 @@
+body {
+  background: #fff;
+  color: white;
+  font-family: arial;
+}
+body header {
+  height: 10vh;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (min-width: 37.4375em) {
+  body header {
+    width: 600px;
+  }
+}
+body header .timer {
+  position: absolute;
+  top: 14%;
+  left: 3%;
+  font-size: 23px;
+  background: #ffad29;
+  width: 8vh;
+  height: 8vh;
+  line-height: 8vh;
+  border-radius: 4vh;
+  text-align: center;
+}
+
+.game {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+@media screen and (min-width: 37.4375em) {
+  .game {
+    width: 600px;
+  }
+}
+
+.flip-container {
+  perspective: 1000;
+  height: 22%;
+  margin: 1%;
+  cursor: pointer;
+}
+
+.flip-container.flip .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  width: 23%;
+  float: left;
+  /* border-radius: 12px; */
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  height: 100%;
+  position: relative;
+}
+.flipper .front,
+.flipper .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.flipper .front {
+  transform: rotateY(0deg);
+  background: green;
+}
+.flipper .back {
+  transform: rotateY(180deg);
+  border: 1px solid #e8e8e8;
+}
+
+#angular {
+  background: white url("img/ANGULAR.png") no-repeat center;
+  background-size: contain;
+}
+
+#apache {
+  background: white url("img/APACHE.png") no-repeat center;
+  background-size: contain;
+}
+
+#css3 {
+  background: white url("img/CSS3.png") no-repeat center;
+  background-size: contain;
+}
+
+#github {
+  background: white url("img/GITHUB.png") no-repeat center;
+  background-size: contain;
+}
+
+#javascript {
+  background: white url("img/JAVASCRIPT.png") no-repeat center;
+  background-size: contain;
+}
+
+#php {
+  background: white url("img/PHP.png") no-repeat center;
+  background-size: contain;
+}
+
+#mysql {
+  background: white url("img/MYSQL.png") no-repeat center;
+  background-size: contain;
+}
+
+#java {
+  background: white url("img/JAVA.png") no-repeat center;
+  background-size: contain;
+}
